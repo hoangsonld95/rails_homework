@@ -10,5 +10,19 @@
   <%= @user.email %>
 </p>
 
+<<<<<<< HEAD
+=======
+<p>
+  <strong>Microposts:</strong>
+	<ul>
+		<% @microposts.each do |t| %>
+			<% if t.user_id == @user.id %>
+				<li><%= t.content %> </li>
+			<%end%>
+		<%end%>
+	</ul>
+</p>
+
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

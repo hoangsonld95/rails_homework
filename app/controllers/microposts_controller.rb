@@ -15,6 +15,10 @@ class MicropostsController < ApplicationController
   # GET /microposts/new
   def new
     @micropost = Micropost.new
+<<<<<<< HEAD
+=======
+    @users = User.all
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
   end
 
   # GET /microposts/1/edit

@@ -17,7 +17,12 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
+<<<<<<< HEAD
     <%= f.number_field :user_id %>
+=======
+    <%#= f.number_field :user_id %>
+    <%= collection_select(:micropost, :user_id, @users, :id, :name,prompt: true) %>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   resources :microposts
   resources :users
+<<<<<<< HEAD
   get "/pages/:page" => "pages#show"
+=======
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

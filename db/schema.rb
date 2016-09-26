@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160926162656) do
+=======
+ActiveRecord::Schema.define(version: 20160910081742) do
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
 
   create_table "microposts", force: :cascade do |t|
     t.string   "content"

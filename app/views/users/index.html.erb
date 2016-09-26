@@ -16,7 +16,11 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Show', user %></td>
+=======
+        <td><%= link_to 'Show', user, {:action => 'show'} %></td>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
