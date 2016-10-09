@@ -11,11 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161009164559) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160926162656) do
+=======
+ActiveRecord::Schema.define(version: 20160910081742) do
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+
+  create_table "microposts", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
+<<<<<<< HEAD
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "password_digest"
@@ -23,4 +39,10 @@ ActiveRecord::Schema.define(version: 20161009164559) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
 
+=======
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 end

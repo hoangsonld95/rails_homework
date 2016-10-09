@@ -4,7 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
+<<<<<<< HEAD
 gem 'bootstrap-sass', '3.3.6'
+=======
+<<<<<<< HEAD
+gem 'bootstrap-sass', '3.3.0'
+
+=======
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -25,7 +33,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 gem 'bcrypt', '~> 3.1.7'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 
 # Use Unicorn as the app server
 # gem 'unicorn'

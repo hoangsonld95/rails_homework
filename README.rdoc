@@ -5,7 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
+<<<<<<< HEAD
 * Ruby version
+=======
+* Ruby version : 4.2.6
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 
 * System dependencies
 
@@ -15,7 +19,11 @@ Things you may want to cover:
 
 * Database initialization
 
+<<<<<<< HEAD
 * How to run the test suite
+=======
+* How to run the test suite : Configure trong URL : localhost:3000/pages/about
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 
 * Services (job queues, cache servers, search engines, etc.)
 

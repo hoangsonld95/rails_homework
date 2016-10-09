@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+<<<<<<< HEAD
     before_save { self.email = email.downcase }
     validates :name, presence: true, length: { maximum: 50 }
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -12,4 +13,6 @@ class User < ActiveRecord::Base
         BCrypt::Engine.cost
         BCrypt::Password.create(string, cost: cost)
     end
+=======
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
 end

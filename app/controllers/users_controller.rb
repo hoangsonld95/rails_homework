@@ -10,7 +10,14 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+<<<<<<< HEAD
       @user = User.find(params[:id])
+=======
+<<<<<<< HEAD
+=======
+    @microposts = Micropost.all
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
   end
 
   # GET /users/new
@@ -27,6 +34,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+<<<<<<< HEAD
     if @user.save
         log_in @user
         flash[:success] = "Welcome to the Sample App!"
@@ -34,6 +42,16 @@ class UsersController < ApplicationController
     # Handle a successful save.
     else
     render 'new'
+=======
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.json { render :show, status: :created, location: @user }
+      else
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
     end
   end
 
@@ -69,6 +87,10 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
+<<<<<<< HEAD
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
+=======
+      params.require(:user).permit(:name, :email)
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
     end
 end
