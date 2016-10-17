@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
 <% provide(:title, @user.name) %>
 <div class="row">
 <aside class="col-md-4">
@@ -8,4 +12,38 @@
 </h1>
 </section>
 </aside>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+=======
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<<<<<<< HEAD
+=======
+<p>
+  <strong>Microposts:</strong>
+	<ul>
+		<% @microposts.each do |t| %>
+			<% if t.user_id == @user.id %>
+				<li><%= t.content %> </li>
+			<%end%>
+		<%end%>
+	</ul>
+</p>
+
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0

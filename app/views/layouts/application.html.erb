@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
     <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all',
@@ -18,14 +22,22 @@
         <li><%= link_to "Home",   '/home' %></li>
         <li><%= link_to "Help",   '#' %></li>
         <% if logged_in? %>
+<<<<<<< HEAD
             <li><%= link_to "Users", users_path %></li>
+=======
+            <li><%= link_to "Users", '#' %></li>
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         Account <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><%= link_to "Profile", current_user %></li>
+<<<<<<< HEAD
                         <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+=======
+                        <li><%= link_to "Settings", '#' %></li>
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
                         <li class="divider"></li>
                         <li>
                         <%= link_to "Log out", logout_path, method: "delete" %>
@@ -47,4 +59,60 @@
         <%= render 'layouts/footer' %>
 </div>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+=======
+<<<<<<< HEAD
+  <title>SampleApp</title>
+=======
+  <title>DemoApp</title>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<<<<<<< HEAD
+<header class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<%= link_to "sample app", '#', id: "logo" %>
+			<nav>
+				<ul class="nav pull-right">
+				<li><%= link_to "Home", '#' %></li>
+				<li><%= link_to "Help", '#' %></li>
+				<li><%= link_to "Sign in", '#' %></li>
+				</ul>
+			</nav>
+		</div>
+	
+	</div>
+	
+</header>
+
+<div class="center hero-unit">
+	<h1>Welcome to the Sample App</h1>
+
+	<h2>
+		This is the home page for the <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
+	</h2>
+
+	<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+	
+</div>
+
+
+<div class="container">
+	<%= yield %>
+</div>
+=======
+<%= yield %>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+
+</body>
+</html>
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0

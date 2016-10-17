@@ -4,7 +4,19 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
+<<<<<<< HEAD
 gem 'bootstrap-sass', '3.3.6'
+=======
+<<<<<<< HEAD
+gem 'bootstrap-sass', '3.3.6'
+=======
+<<<<<<< HEAD
+gem 'bootstrap-sass', '3.3.0'
+
+=======
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -14,7 +26,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+<<<<<<< HEAD
 gem 'faker',          '1.6.6'
+=======
+
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -25,9 +41,18 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
+=======
+<<<<<<< HEAD
+gem 'bcrypt', '~> 3.1.7'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
+
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
 # Use Unicorn as the app server
 # gem 'unicorn'
 

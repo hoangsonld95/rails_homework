@@ -1,0 +1,30 @@
+<%= form_for(@micropost) do |f| %>
+  <% if @micropost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
+
+      <ul>
+      <% @micropost.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+<<<<<<< HEAD
+    <%= f.number_field :user_id %>
+=======
+    <%#= f.number_field :user_id %>
+    <%= collection_select(:micropost, :user_id, @users, :id, :name,prompt: true) %>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
@@ -8,3 +9,42 @@
 </ul>
 
 <%= will_paginate %>
+=======
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+<<<<<<< HEAD
+        <td><%= link_to 'Show', user %></td>
+=======
+<<<<<<< HEAD
+        <td><%= link_to 'Show', user %></td>
+=======
+        <td><%= link_to 'Show', user, {:action => 'show'} %></td>
+>>>>>>> d9c4b2d1f7e70545700ffaee6ed09d3a59544a60
+>>>>>>> 4cc34a407957ef17da36e70102c9e7246b69aedd
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
+>>>>>>> 8427a5e67ccc87e588511bf7900c6abab4fe4bc0
